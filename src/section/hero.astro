@@ -1,0 +1,30 @@
+---
+import Container from "@components/container.astro";
+import H1 from "@elements/h1.astro";
+import H3 from "@elements/h3.astro";
+import Button from "@components/button.astro";
+---
+
+<main class="text-center py-20">
+  <Container>
+    <div class="flex gap-10 md:grid md:grid-cols-12 flex-col">
+      <div class="md:col-start-2 md:col-end-12">
+        <H3>
+          Hola 👋🏼 Soy
+          <span class="text-secondary">Juan López</span>
+        </H3>
+      </div>
+      <div class="md:col-start-2 md:col-end-12 col-span-4">
+        <H1>Diseño Web personalizado para Pequeñas y Medianas Empresas</H1>
+      </div>
+      <div
+        class="grid sm:w-full md:flex md:col-start-2 md:col-end-12 gap-4 justify-center"
+      >
+        <Button icon="mail" type="sm">Contactar</Button>
+        <Button icon="clinical_notes" secondary={true} type="sm"
+          >Curriculum
+        </Button>
+      </div>
+    </div>
+  </Container>
+</main>
