@@ -1,0 +1,47 @@
+---
+import Button from '../components/button.astro'
+import Container from '@components/container.astro'
+import H2 from '@elements/h2.astro'
+import H3 from '@elements/h3.astro'
+import P from '@elements/p.astro'
+---
+<section class="text-center py-36">
+    <Container>
+    <div class="grid gap-6">
+        <H2 >Proyectos</H2>
+        <P>Descubre algunos de mis proyectos más recientes y exitosos. Cada uno de ellos representa el compromiso con la excelencia y la creatividad que pongo en cada proyecto que emprendo</P>
+    </div>
+    <section class="grid gap-24 py-[72px] ">
+        <div class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
+            <div class="col-span-4 lg:col-span-7 lg:h-screen lg:py-[5%]">
+                <img 
+                class="lg:w-auto lg:h-[100%]"
+                src="https://images.unsplash.com/photo-1720884413532-59289875c3e1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen proyecto" />
+            </div>
+            <div class="grid gap-8 col-span-4 mt-12 lg:col-span-5 lg:p-10 lg:flex lg:flex-col " >
+                <H3>App del Tiempo</H3>
+                <P>Desarrollé una aplicación meteorológica innovadora que permite a los usuarios visualizar el clima en tiempo real según su ubicación y buscar el clima en otras ciudades. Como Desarrollador Principal y Diseñador UI/UX, utilicé tecnologías como HTML, CSS, JavaScript, y React para construir esta aplicación. .</P>
+                <div class="flex gap-4 justify-center ">
+                    <Button type="sm">Code</Button>
+                    <Button secondary type='sm'>Demo</Button>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
+            <div class="col-span-4 lg:col-span-7 lg:h-screen lg:py-[5%]">
+                <img 
+                class="lg:w-auto lg:h-[100%]"
+                src="https://images.unsplash.com/photo-1720884413532-59289875c3e1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen proyecto" />
+            </div>
+            <div class="grid gap-8 col-span-4 mt-12 lg:col-span-5 lg:p-10 lg:flex lg:flex-col " >
+                <H3>App del Tiempo</H3>
+                <P>Desarrollé una aplicación meteorológica innovadora que permite a los usuarios visualizar el clima en tiempo real según su ubicación y buscar el clima en otras ciudades. Como Desarrollador Principal y Diseñador UI/UX, utilicé tecnologías como HTML, CSS, JavaScript, y React para construir esta aplicación. .</P>
+                <div class="flex gap-4 justify-center ">
+                    <Button type="sm">Code</Button>
+                    <Button secondary type='sm'>Demo</Button>
+                </div>
+            </div>
+        </div>
+    </section>
+  </Container>
+</section>

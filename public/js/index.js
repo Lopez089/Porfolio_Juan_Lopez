@@ -23,3 +23,23 @@ const closeMenu = () => {
 
 iconMenu.addEventListener('click', () => openMenu())
 iconClose.addEventListener('click', () => closeMenu())
+
+document.addEventListener('DOMContentLoaded', function () {
+  const aboutMeSection = $('#about');
+  const avatar = $('#avatar')
+
+  const applyAnimation = (element, animation) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(animation);
+        }
+      });
+    });
+
+    observer.observe(element);
+  }
+
+  applyAnimation(avatar, 'animate-fadeInLeft')
+  applyAnimation(aboutMeSection, 'animate-fadeInRight')
+});

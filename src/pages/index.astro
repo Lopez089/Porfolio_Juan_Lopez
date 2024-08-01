@@ -2,6 +2,9 @@
 import About from "@section/about.astro";
 import Header from "@section/header.astro";
 import Hero from "@section/hero.astro";
+import Proyectos from '../section/proyecto.astro'
+import Cta from "@components/Cta.astro";
+import Footer from "@components/footer.astro";
 ---
 
 <html lang="en">
@@ -26,6 +29,57 @@ import Hero from "@section/hero.astro";
 		<Header />
 		<Hero />
 		<About />
+		<Proyectos/> 
+		<Cta/>
+		<Footer/>
 	</body>
-	<script type="text/javascript" src="/js/index.js"></script>
 </html>
+
+<script>
+	const $ = (selector) => {
+  return window.document.querySelector(selector)
+}
+
+// const logo = $('#logo')
+const iconMenu = $('#iconMenu')
+const iconClose = $('#iconClose')
+const nav = $('#nav')
+const navContainer = $('#nav-container')
+
+const openMenu = () => {
+  iconMenu.classList.add('hidden')
+  iconClose.classList.remove('hidden')
+  navContainer.classList.remove('hidden')
+  navContainer.classList.add('absolute', 'h-screen', 'w-full', 'top-0', 'left-0')
+}
+
+const closeMenu = () => {
+  iconClose.classList.add('hidden')
+  iconMenu.classList.remove('hidden')
+  navContainer.classList.add('hidden')
+}
+
+iconMenu.addEventListener('click', () => openMenu())
+iconClose.addEventListener('click', () => closeMenu())
+
+document.addEventListener('DOMContentLoaded', function () {
+  const aboutMeSection = $('#about');
+  const avatar = $('#avatar')
+
+  const applyAnimation = (element, animation) => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(animation);
+        }
+      });
+    });
+
+    observer.observe(element);
+  }
+
+  applyAnimation(avatar, 'animate-fadeInLeft')
+  applyAnimation(aboutMeSection, 'animate-fadeInRight')
+});
+
+</script>

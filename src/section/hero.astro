@@ -1,29 +1,27 @@
 ---
 import Container from "@components/container.astro";
 import H1 from "@elements/h1.astro";
-import H3 from "@elements/h3.astro";
+import H5 from "@elements/h5.astro";
 import Button from "@components/button.astro";
 ---
 
 <main class="text-center py-20">
   <Container>
     <div class="flex gap-10 md:grid md:grid-cols-12 flex-col">
-      <div class="md:col-start-2 md:col-end-12">
-        <H3>
+      <div class="md:col-start-2 md:col-end-12 animate-fadeIn05 opacity-0 translate-y-[-20px]">
+        <H1>
           Hola 👋🏼 Soy
           <span class="text-secondary">Juan López</span>
-        </H3>
+        </H1>
       </div>
-      <div class="md:col-start-2 md:col-end-12 col-span-4">
-        <H1>Diseño Web personalizado para Pequeñas y Medianas Empresas</H1>
+      <div class="md:col-start-2 md:col-end-12 col-span-4 animate-fadeIn1 opacity-0  translate-y-[-20px]">
+        <H5>Desarrollador Frontend React. Apasionado por la innovación, siempre en busca de mejorar y aprender.</H5>
       </div>
       <div
-        class="grid sm:w-full md:flex md:col-start-2 md:col-end-12 gap-4 justify-center"
+        class="grid sm:w-full md:flex md:col-start-2 md:col-end-12 gap-4 justify-center animate-slideIn opacity-0  translate-y-[20px]"
       >
-        <Button icon="mail" type="sm">Contactar</Button>
-        <Button icon="clinical_notes" secondary={true} type="sm"
-          >Curriculum
-        </Button>
+        <Button  type="sm">Proyectos</Button>
+        <Button  secondary={true} type="sm">Curriculum</Button>
       </div>
     </div>
   </Container>

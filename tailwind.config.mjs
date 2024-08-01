@@ -24,9 +24,12 @@ export default {
 				"h2Desktop": ['48px', { lineHeight: '1' }],
 				"h2Tablet": ['44px', { lineHeight: '1' }],
 				"h2Mobile": ['36px', { lineHeight: '1' }],
-				"h3Desktop": ['40px', { lineHeight: '1' }],
+				"h3Desktop": ['36px', { lineHeight: '1' }],
 				"h3Tablet": ['36px', { lineHeight: '1' }],
 				"h3Mobile": ['32px', { lineHeight: '1' }],
+				"h5Desktop": ['24px', { lineHeight: '1.2' }],
+				"h5Tablet": ['24px', { lineHeight: '1' }],
+				"h5Mobile": ['20px', { lineHeight: '1' }],
 				lg: ['24px', { lineHeight: '1.75rem' }],
 				md: ['20px', { lineHeight: '1.75rem' }],
 				r: ['16px', { lineHeight: '1.75rem' }],
@@ -46,7 +49,39 @@ export default {
 				"primary": '#2563EB',
 				"secondary": '#20D1E6'
 			},
-
+			animation: {
+				fadeIn05: 'fadeIn 1s forwards 0.5s',
+				fadeIn1: 'fadeIn 1s forwards 1s',
+				slideIn: 'slideIn 1s forwards 1.5s',
+				fadeInLeft: 'fadeInLeft 1s forwards 0.5s',
+				fadeInRight: 'fadeInRight 1s forwards 0.5s'
+			},
+			keyframes: {
+				fadeIn: {
+					to: {
+						opacity: 1,
+						transform: 'translateY(0)'
+					}
+				},
+				slideIn: {
+					to: {
+						opacity: 1,
+						transform: 'translateY(0)'
+					}
+				},
+				fadeInLeft: {
+					to: {
+						opacity: 1,
+						transform: 'translateX(0)'
+					}
+				},
+				fadeInRight: {
+					to: {
+						opacity: 1,
+						transform: ' translateX(0)'
+					}
+				}
+			}
 		}
 	},
 	plugins: [],
