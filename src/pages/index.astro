@@ -27,10 +27,12 @@ import Footer from "@components/footer.astro";
 	</head>
 	<body class="font-sans text-black">
 		<Header />
-		<Hero />
-		<About />
-		<Proyectos/> 
-		<Cta/>
+		<main>
+			<Hero />
+			<About />
+			<Proyectos/> 
+			<Cta/>
+		</main>
 		<Footer/>
 	</body>
 </html>
@@ -71,7 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //   observer
   const applyAnimation = (element:Element, animation:string) => {
+
+	
+
     const observer = new IntersectionObserver((entries) => {
+		console.log(entries)
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add(animation);

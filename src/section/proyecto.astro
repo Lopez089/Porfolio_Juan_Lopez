@@ -5,14 +5,15 @@ import H2 from '@elements/h2.astro'
 import H3 from '@elements/h3.astro'
 import P from '@elements/p.astro'
 ---
-<section class="text-center py-36">
+<section id="porfolio" class="text-center py-36">
     <Container>
     <div class="grid gap-6">
         <H2 >Proyectos</H2>
         <P>Descubre algunos de mis proyectos más recientes y exitosos. Cada uno de ellos representa el compromiso con la excelencia y la creatividad que pongo en cada proyecto que emprendo</P>
     </div>
+    
     <section class="grid gap-24 py-[72px] ">
-        <div  class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
+        <div  class="grid grid-cols-4 lg:grid-cols-12  ">
             <div id='proyectImage' class="col-span-4 opacity-0  translate-x-[20px] lg:col-span-7 lg:h-screen lg:py-[5%]">
                 <img 
                 class="rounded-2xl lg:w-auto lg:h-[100%]"
@@ -27,7 +28,7 @@ import P from '@elements/p.astro'
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
+        <div class="grid grid-cols-4 lg:grid-cols-12  ">
             <div class="grid gap-8 col-span-4 mt-12 lg:col-span-5 lg:p-10 lg:flex lg:flex-col lg:justify-center" >
                 <H3>App del Tiempo</H3>
                 <P>Desarrollé una aplicación meteorológica innovadora que permite a los usuarios visualizar el clima en tiempo real según su ubicación y buscar el clima en otras ciudades. Como Desarrollador Principal y Diseñador UI/UX, utilicé tecnologías como HTML, CSS, JavaScript, y React para construir esta aplicación. .</P>
@@ -43,5 +44,5 @@ import P from '@elements/p.astro'
             </div>
         </div>
     </section>
-  </Container>
+</Container>
 </section>

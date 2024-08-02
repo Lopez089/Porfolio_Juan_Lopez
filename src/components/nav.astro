@@ -1,10 +1,21 @@
+--- 
+import {nav} from '../../public/data'
+---
+
 <nav id="nav" class="text-h3Mobile font-medium md:text-r">
   <ul
     class="flex gap-10 items-center md:items-end flex-col text-primary md:flex-row md:text-black"
   >
-    <li>Homer</li>
-    <li>Acerca de</li>
-    <li>Portafolio</li>
-    <li>Contacto</li>
+    {
+      nav.map(nav=>{
+        return (
+        <li class='cursor-pointer hover:text-primary transition-colors duration-500 delay-100'>
+         <a href={nav.url}>
+          {nav.label}
+          </a> 
+        </li>
+      )
+      })
+    }
   </ul>
 </nav>
