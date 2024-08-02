@@ -53,8 +53,8 @@ export default {
 				fadeIn05: 'fadeIn 1s forwards 0.5s',
 				fadeIn1: 'fadeIn 1s forwards 1s',
 				slideIn: 'slideIn 1s forwards 1.5s',
-				fadeInLeft: 'fadeInLeft 1s forwards 0.5s',
-				fadeInRight: 'fadeInRight 1s forwards 0.5s'
+				fadeInLeft: 'fadeInLeft 3s forwards 0.5s',
+				fadeInRight: 'fadeInRight 3s forwards 0.5s'
 			},
 			keyframes: {
 				fadeIn: {

@@ -12,13 +12,13 @@ import P from '@elements/p.astro'
         <P>Descubre algunos de mis proyectos más recientes y exitosos. Cada uno de ellos representa el compromiso con la excelencia y la creatividad que pongo en cada proyecto que emprendo</P>
     </div>
     <section class="grid gap-24 py-[72px] ">
-        <div class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
-            <div class="col-span-4 lg:col-span-7 lg:h-screen lg:py-[5%]">
+        <div  class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
+            <div id='proyectImage' class="col-span-4 opacity-0  translate-x-[20px] lg:col-span-7 lg:h-screen lg:py-[5%]">
                 <img 
-                class="lg:w-auto lg:h-[100%]"
+                class="rounded-2xl lg:w-auto lg:h-[100%]"
                 src="https://images.unsplash.com/photo-1720884413532-59289875c3e1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen proyecto" />
             </div>
-            <div class="grid gap-8 col-span-4 mt-12 lg:col-span-5 lg:p-10 lg:flex lg:flex-col " >
+            <div id='proyectInfo' class="grid gap-8 col-span-4 mt-12  opacity-0  translate-x-[-20px] lg:col-span-5 lg:p-10 lg:flex lg:flex-col  lg:justify-center" >
                 <H3>App del Tiempo</H3>
                 <P>Desarrollé una aplicación meteorológica innovadora que permite a los usuarios visualizar el clima en tiempo real según su ubicación y buscar el clima en otras ciudades. Como Desarrollador Principal y Diseñador UI/UX, utilicé tecnologías como HTML, CSS, JavaScript, y React para construir esta aplicación. .</P>
                 <div class="flex gap-4 justify-center ">
@@ -28,18 +28,18 @@ import P from '@elements/p.astro'
             </div>
         </div>
         <div class="grid grid-cols-4 lg:grid-cols-12 lg:h-screen ">
-            <div class="col-span-4 lg:col-span-7 lg:h-screen lg:py-[5%]">
-                <img 
-                class="lg:w-auto lg:h-[100%]"
-                src="https://images.unsplash.com/photo-1720884413532-59289875c3e1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen proyecto" />
-            </div>
-            <div class="grid gap-8 col-span-4 mt-12 lg:col-span-5 lg:p-10 lg:flex lg:flex-col " >
+            <div class="grid gap-8 col-span-4 mt-12 lg:col-span-5 lg:p-10 lg:flex lg:flex-col lg:justify-center" >
                 <H3>App del Tiempo</H3>
                 <P>Desarrollé una aplicación meteorológica innovadora que permite a los usuarios visualizar el clima en tiempo real según su ubicación y buscar el clima en otras ciudades. Como Desarrollador Principal y Diseñador UI/UX, utilicé tecnologías como HTML, CSS, JavaScript, y React para construir esta aplicación. .</P>
                 <div class="flex gap-4 justify-center ">
                     <Button type="sm">Code</Button>
                     <Button secondary type='sm'>Demo</Button>
                 </div>
+            </div>
+            <div class="col-span-4 lg:col-span-7 lg:h-screen lg:py-[5%] lg:flex justify-end">
+                <img 
+                class=" rounded-2xl lg:w-auto lg:h-[100%]"
+                src="https://images.unsplash.com/photo-1720884413532-59289875c3e1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="imagen proyecto" />
             </div>
         </div>
     </section>

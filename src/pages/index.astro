@@ -36,16 +36,19 @@ import Footer from "@components/footer.astro";
 </html>
 
 <script>
-	const $ = (selector:string):any => {
-		return window.document.querySelector(selector)
+// Selectores
+const $ = (selector:string):any => {
+	return window.document.querySelector(selector)
 }
 
-// const logo = $('#logo')
 const iconMenu = $('#iconMenu')
 const iconClose = $('#iconClose')
 const nav = $('#nav')
 const navContainer = $('#nav-container')
+const proyectInfo = $('#proyectInfo')
+const proyectImage= $('#proyectImage')
 
+// Menu
 const openMenu = () => {
   iconMenu.classList.add('hidden')
   iconClose.classList.remove('hidden')
@@ -66,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const aboutMeSection = $('#about');
   const avatar = $('#avatar')
 
+//   observer
   const applyAnimation = (element:Element, animation:string) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -80,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   applyAnimation(avatar, 'animate-fadeInLeft')
   applyAnimation(aboutMeSection, 'animate-fadeInRight')
+  applyAnimation(proyectInfo, 'animate-fadeInRight')
+  applyAnimation(proyectImage, 'animate-fadeInRight')
 });
 
 </script>
