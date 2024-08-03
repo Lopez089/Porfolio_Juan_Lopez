@@ -4,32 +4,29 @@ import Nav from "@components/nav.astro";
 import Container from "@components/container.astro";
 ---
 
-<header class="py-10">
+<header id="header" class=" relative">
+  <div id="header-container" class="py-10 z-40 bg-white ">
   <Container>
-    <div class="flex justify-between items-center relateve">
-      <div id="logo">
+      <div id="container-icons" class="flex justify-between w-full">
         <Logo />
-      </div>
-      <div
-        id="nav-container"
-        class="hidden md:flex md:bg-transparent top-36 bg-white"
-      >
-        <Nav />
-      </div>
-      <div class="md:hidden">
-        <span
+        <div>
+          <span
+          id="iconClose"
+          class="z-50 material-symbols-outlined text-3xl cursor-pointer hidden"
+          >
+            close
+          </span>
+          <span
           id="iconMenu"
           class="material-symbols-outlined text-3xl cursor-pointer"
-        >
-          menu
-        </span>
-        <span
-          id="iconClose"
-          class="material-symbols-outlined text-3xl cursor-pointer hidden"
-        >
-          close
-        </span>
+          >
+            menu
+          </span>
+        </div>
       </div>
-    </div>
-  </Container>
+      <div id="nav-container" class="pt-36 hidden">
+        <Nav/>
+      </div>
+    </Container>
+  </div>
 </header>

@@ -49,19 +49,28 @@ const nav = $('#nav')
 const navContainer = $('#nav-container')
 const proyectInfo = $('#proyectInfo')
 const proyectImage= $('#proyectImage')
+const headerContainer = $('#header-container')
+const containerIcons = $('#container-icons')
+const header = $('#header')
 
 // Menu
 const openMenu = () => {
   iconMenu.classList.add('hidden')
   iconClose.classList.remove('hidden')
   navContainer.classList.remove('hidden')
-  navContainer.classList.add('absolute', 'h-screen', 'w-full', 'top-0', 'left-0')
+  navContainer.classList.add('h-screen')
+  headerContainer.classList.add('w-full')
+  header.classList.add('h-screen')
+  headerContainer.classList.add('fixed')
 }
 
 const closeMenu = () => {
   iconClose.classList.add('hidden')
   iconMenu.classList.remove('hidden')
   navContainer.classList.add('hidden')
+  headerContainer.classList.remove('w-full')
+  header.classList.remove('h-screen')
+  headerContainer.classList.remove('fixed')
 }
 
 iconMenu.addEventListener('click', () => openMenu())
@@ -73,8 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //   observer
   const applyAnimation = (element:Element, animation:string) => {
-
-	
 
     const observer = new IntersectionObserver((entries) => {
 		console.log(entries)
