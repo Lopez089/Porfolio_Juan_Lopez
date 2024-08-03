@@ -55,7 +55,8 @@ export default {
 				slideIn: 'slideIn 1s forwards 1.5s',
 				fadeInLeft: 'fadeInLeft 3s forwards 0.5s',
 				fadeInRight: 'fadeInRight 3s forwards 0.5s',
-				greeting: 'greeting 3s forwards 0.5s infinite'
+				greeting: 'greeting 3s forwards 0.5s 5',
+				openNav: 'openNav 3s forwars 0.5s '
 			},
 			keyframes: {
 				fadeIn: {
@@ -86,6 +87,15 @@ export default {
 					'0%': { transform: 'rotate(0deg)' },
 					'50%': { transform: 'rotate(35deg)' },
 					'100%': { transform: 'rotate(0deg)' },
+
+				},
+				openNav: {
+					from: {
+						height: '0'
+					},
+					to: {
+						height: '100%'
+					}
 
 				}
 			}
