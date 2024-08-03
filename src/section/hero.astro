@@ -10,7 +10,7 @@ import Button from "@components/button.astro";
     <div class="flex gap-10 md:grid md:grid-cols-12 flex-col">
       <div class="md:col-start-2 md:col-end-12 animate-fadeIn05 opacity-0 translate-y-[-20px]">
         <H1>
-          Hola 👋🏼 Soy
+          Hola <span class="inline-block animate-greeting">👋🏼</span> Soy
           <span class="text-primary">Juan López</span>
         </H1>
       </div>
@@ -18,7 +18,7 @@ import Button from "@components/button.astro";
         <P>Desarrollador Frontend React. Apasionado por la innovación, siempre en busca de mejorar y aprender.</P>
       </div>
       <div
-        class="flex flex-col sm:w-full md:col-start-2 md:col-end-12 gap-4 justify-center animate-slideIn opacity-0  translate-y-[20px]"
+        class="flex flex-col sm:w-full md:flex-row md:col-start-2 md:col-end-12 gap-4 justify-center animate-slideIn opacity-0  translate-y-[20px]"
       >
         <Button  type="sm">Proyectos</Button>
         <Button  secondary={true} type="sm">Curriculum</Button>

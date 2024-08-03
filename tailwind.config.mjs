@@ -54,7 +54,8 @@ export default {
 				fadeIn1: 'fadeIn 1s forwards 1s',
 				slideIn: 'slideIn 1s forwards 1.5s',
 				fadeInLeft: 'fadeInLeft 3s forwards 0.5s',
-				fadeInRight: 'fadeInRight 3s forwards 0.5s'
+				fadeInRight: 'fadeInRight 3s forwards 0.5s',
+				greeting: 'greeting 3s forwards 0.5s infinite'
 			},
 			keyframes: {
 				fadeIn: {
@@ -80,6 +81,12 @@ export default {
 						opacity: 1,
 						transform: ' translateX(0)'
 					}
+				},
+				greeting: {
+					'0%': { transform: 'rotate(0deg)' },
+					'50%': { transform: 'rotate(35deg)' },
+					'100%': { transform: 'rotate(0deg)' },
+
 				}
 			}
 		}
