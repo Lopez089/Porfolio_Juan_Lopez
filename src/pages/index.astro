@@ -26,32 +26,38 @@ import Footer from "@components/footer.astro";
 		<title>Astro</title>
 	</head>
 	<body class="font-sans text-black">
-		<Header />
+    <Header />
 		<main>
 			<Hero />
 			<About />
 			<Proyectos/> 
+      <div class="flex justify-center">
+        <hr class="w-1/3">
+      </div>
 			<Cta/>
 		</main>
 		<Footer/>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
 	</body>
-</html>
-
-<script>
-// Selectores
-const $ = (selector:string):any => {
-	return window.document.querySelector(selector)
-}
-
-const iconMenu = $('#iconMenu')
-const iconClose = $('#iconClose')
-const navContainer = $('#nav-container')
-const proyectInfo = $('#proyectInfo')
-const proyectImage= $('#proyectImage')
-const headerContainer = $('#header-container')
-const header = $('#header')
-
-// Menu
+  </html>
+  
+  <script>
+   
+  
+  // Selectores
+    const $ = (selector:string):any => {
+      return window.document.querySelector(selector)
+    }
+    
+    const iconMenu = $('#iconMenu')
+    const iconClose = $('#iconClose')
+    const navContainer = $('#nav-container')
+    const proyectInfo = $('#proyectInfo')
+    const proyectImage= $('#proyectImage')
+    const headerContainer = $('#header-container')
+    const header = $('#header')
+    
+    // Menu
 const openMenu = () => {
   iconMenu.classList.add('hidden')
   iconClose.classList.remove('hidden')
@@ -100,3 +106,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 </script>
+<style>
+    html.lenis, html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+</style>
