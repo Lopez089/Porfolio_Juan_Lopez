@@ -1,0 +1,30 @@
+---
+const {title, description} = Astro.props
+---
+
+<!-- Doctype HTML5 -->
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+		<title>{title}</title>
+        <meta name="description" content={description}>
+        <link rel="shortcut icon" href="/logo.ico">
+	</head>
+	<body class="font-sans text-black">
+        <slot/>
+        <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
+    </body>
+</html>
