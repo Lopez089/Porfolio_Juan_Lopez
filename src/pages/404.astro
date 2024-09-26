@@ -1,0 +1,30 @@
+---
+import Layout from "src/layout/layout.astro";
+import H1 from "@elements/h1.astro";
+import P from "@elements/p.astro";
+import H3 from "@elements/h3.astro";
+import Header from "@section/header.astro";
+import Footer from "@components/footer.astro";
+import Container from "@components/container.astro";
+import Button from "@components/button.astro";
+
+---
+
+<Layout title="Página no encontrada" description="Parece que te perdiste. La página que buscas no está aquí, pero puedes volver al inicio y encontrar lo que necesitas fácilmente.">
+    
+        <Header/>
+        <Container>
+            <div class="flex flex-col justify-center items-center gap-4 py-36">
+                <H1>
+                    404
+                </H1>
+                <H3>¡Ups! Página no encontrada.</H3>
+                <P>La página que buscas no existe o ha sido movida</P>
+                <div class="m-8">
+                    <Button><a href="/">Ir a la página de inicio</a></Button>
+                </div>
+            </div>
+        </Container>
+        <Footer/>
+    
+</Layout>

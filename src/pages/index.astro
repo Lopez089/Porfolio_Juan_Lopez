@@ -5,7 +5,7 @@ import Hero from "@section/hero.astro";
 import Proyectos from '../section/proyecto.astro'
 import Cta from "@components/Cta.astro";
 import Footer from "@components/footer.astro";
-import Layout from "src/layout.astro";
+import Layout from "src/layout/layout.astro";
 ---
 <Layout title="Diseño de sitios web personalizados para negocios| Juan Lopez" description='Diseño de sitios web personalizados para negocios. Soluciones a medida y sin complicaciones. Pide tu presupuesto sin compromiso hoy mismo'>
   <Header />
@@ -85,24 +85,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 </script>
-<style>
-    html.lenis, html.lenis body {
-    height: auto;
-  }
-
-  .lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-  }
-
-  .lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-  }
-
-  .lenis.lenis-stopped {
-    overflow: hidden;
-  }
-
-  .lenis.lenis-smooth iframe {
-    pointer-events: none;
-  }
-</style>
