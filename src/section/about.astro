@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-import avatar from '/public/Avatar.png'
 import Container from "@components/container.astro";
 import Figure from "@components/figure.astro";
 import H2 from "@elements/h2.astro";
@@ -15,10 +13,9 @@ import P from "@elements/p.astro";
           <Figure />
         </div>
         <div class="p-9 h-96 pt-20 pl-6 flex justify-center lg:block">
-          <Image
-            src={avatar}
+          <img
+            src='Avatar.png'
             alt="avatar Juan López"
-            loading="lazy"
             class="w-auto h-52 md:h-[260px] md:w-auto"
           />
         </div>
